@@ -11,8 +11,30 @@ void main() //main function is required
   myVariable = 10;
   myVariable = 10.265;
   myVariable = 'ten';
-  var someNumber = 10; //it take whatever data type appropriate
+  var someNumber = 10.5; //it take whatever data type appropriate
   const myConstant = 10; //once declared cannot be changed
   //myConstant = 12;
   final hoursSinceMidnight = DateTime.now().hour;
+/*
+that can be determined by the compiler before the program ever starts
+running.
+*/
+  num pi = 3.14;
+  print(pi is double);
+  //above print will print true or false
+  var integer = 100;
+  //integer=20.343; cannot be done
+  integer = myVariable.toInt();
+  final someInt = someNumber as int;
+  print(someInt.isEven);
+  var message = 'hello' + 'my name is';
+  const name = ' utkarsh';
+  message += name;
+  const bigString = '''
+You can have a string
+that contains multiple
+lines
+by
+doing this.''';
+  const rawString = r'My name \n is $name.';
 }
