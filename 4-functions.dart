@@ -48,3 +48,11 @@ bool withinTolerance2(int value, {int min = 0, int max = 10}) {
 Function(int number) {
   return '$number is a very nice number';
 }
+
+/*arrow functions
+int add(int a ,int b){
+  return a+b;
+}
+can also e written as written below
+*/
+int add(int a, int b) => a + b;
